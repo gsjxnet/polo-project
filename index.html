@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>polo</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+ <link rel="icon" href="images/Layer4.svg" type="image/x-icon" />
+<script src="js/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function($){
+	/*------------ Scroll Start ------------*/
+	$('.page2').click(function(event) {
+		event.preventDefault();
+		$('html,body').stop(true).animate({scrollTop: $(window).height()}, 500);
+	});
+	$('.page3').click(function(event) {
+		event.preventDefault();
+		$('html,body').stop(true).animate({scrollTop: $('.section3').offset().top}, 500);
+	});
+
+    $(".model_show").click(function(){
+	    $(".section3_footer_read").fadeToggle(300);
+	    $("body").toggleClass("hidden_y");
+    });
+
+    $(".div_a_slack1").mouseover(function(){
+	    $(".div_back_o").addClass("div_back_opctiy");
+	    var index=$(this).index('.div_a_slack1');
+	    $(this).addClass('div_a_slack');
+	    console.log(index);
+	    $(".div_img_slack").eq(index).addClass("div_img_slack_hover");
+    });
+
+    $(".div_a_slack1").mouseout(function(){
+	    $(".div_back_o").removeClass("div_back_opctiy");
+	    var index=$(this).index('.div_a_slack1');
+	    $(".div_img_slack").eq(index).removeClass("div_img_slack_hover");
+	    $(this).removeClass('div_a_slack');
+    });
+
+});
+</script>
+</head>
+<body>
+<div class="section section1">
+	<!-- <div class="div_home"><h1>DESKTOP</h1></div> -->
+	<div class="head">
+		<div class="head_opacity"><h1>DESKTOP</h1></div>
+		<div class="head_polo">
+		    <div class="head_polo_width">
+				<h2>Polo</h2>
+				<a href="#"></a>
+				<p>DENMAN PROSPECT</p>
+			</div>
+		</div>
+		<div class="head_next">
+			<a class="godown page2"><p>Scroll</p><span></span></a>
+		</div>
+	</div>
+</div>
+<div class="section section2">
+	<div class="section2_content">
+		<div class="section2_content_p">
+			<div class="section2_content_pp">
+			    <span>Set amongst</span>
+			    <a class="div_a_slack1">Molonglo Valley's</a>
+			    <span>premium suburb of </span>
+			    <a href="#" class="div_a_slack1">Denman Prospect</a>
+			    <span>, Polo offers a diverse range of north-facing residences boasting expansive </span>
+			    <a href="#" class="div_a_slack1">picturesque views.</a>
+			    <div class="div_back_o"></div>
+			</div>
+	    </div>
+	    <div class="div_next">
+	    	<a class="godown page3">Register your interest</a>
+	    </div>
+	    <div class="div_img_slack1 div_img_slack"><img src="images/slack-imgs.png" alt="slack-imgs" /></div>
+	    <div class="div_img_slack2 div_img_slack"><img src="images/Shops-1.png" alt="slack-imgs" /></div>
+	    <!-- <div class="div_img_slack1 div_img_slack"><img src="images/slack-imgs.png" alt="slack-imgs" /></div> -->
+	</div>
+</div>
+<div class="section section3">
+	<div class="section3_footer">
+		<div class="mediate">
+			<div class="section3_footer_top">
+				<div class="section3_footer_left">
+					<p>Neighbouring Denman Village Shops and surrounded by parks and open spaces, residents at Polo won’t need to travel far for the important things in life. With close proximity to Canberra’s main hubs, you’ll be afforded a convenient lifestyle option in a remarkable suburban location.</p>
+				</div>
+				<div class="section3_footer_left">
+					<p>You’ll be spoilt for choice with a collection of 1, 1 + study and 2 bedroom apartments, as well as 2 and 3 bedroom townhouses.<br/><span>nterested in learning more about Polo and all that Denman Prospect has to offer? <br/>Simply complete the form below and we’ll contact you prior to the formal release.</span></p>
+				</div>
+			</div>
+			<div class="section3_footer_top section3_footer_top_er">
+				<div class="section3_footer_left">
+					<input type="text" placeholder="Name" />
+					<input type="text" placeholder="Phone" />
+					<input type="text" placeholder="Email" />
+				</div>
+				<div class="section3_footer_left">
+					<select name="cf_s1" class="select" aria-required="true" aria-invalid="false">
+						<option value="">Interested In</option>
+						<option value="Apartment - 1 Bedroom">Apartment - 1 Bedroom</option>
+						<option value="Apartment - 1 Bedroom + Study">Apartment - 1 Bedroom + Study</option>
+						<option value="Apartment - 2 Bedrooms">Apartment - 2 Bedrooms</option>
+						<option value="Townhouse - 2 Bedrooms">Townhouse - 2 Bedrooms</option>
+						<option value="Townhouse - 3 Bedrooms">Townhouse - 3 Bedrooms</option>
+					</select>
+					<select name="cf_s1" class="select" aria-required="true" aria-invalid="false">
+						<option value="">Interested In</option>
+						<option value="Apartment - 1 Bedroom">Apartment - 1 Bedroom</option>
+						<option value="Apartment - 1 Bedroom + Study">Apartment - 1 Bedroom + Study</option>
+						<option value="Apartment - 2 Bedrooms">Apartment - 2 Bedrooms</option>
+						<option value="Townhouse - 2 Bedrooms">Townhouse - 2 Bedrooms</option>
+						<option value="Townhouse - 3 Bedrooms">Townhouse - 3 Bedrooms</option>
+					</select>
+					<select name="cf_s1" class="select" aria-required="true" aria-invalid="false">
+						<option value="">Interested In</option>
+						<option value="Apartment - 1 Bedroom">Apartment - 1 Bedroom</option>
+						<option value="Apartment - 1 Bedroom + Study">Apartment - 1 Bedroom + Study</option>
+						<option value="Apartment - 2 Bedrooms">Apartment - 2 Bedrooms</option>
+						<option value="Townhouse - 2 Bedrooms">Townhouse - 2 Bedrooms</option>
+						<option value="Townhouse - 3 Bedrooms">Townhouse - 3 Bedrooms</option>
+					</select>
+				</div>
+			</div>
+			<div class="section3_footer_centent">
+				<textarea name="cf_message" cols="40" rows="10" class="textarea" aria-required="true" aria-invalid="false" placeholder="Comments/Questions"></textarea>
+				<div class="radio">
+				    <input type="checkbox" id="male">
+					<!-- <i class="icon iconfont icon-y"></i> -->
+					<label for="male"><span></span>I agree to the </label><a class="model_show">terms and conditions.</a>
+	            </div>
+	            <input type="submit" value="Submit" class="button" />
+			</div>
+			<div class="section3_footer_bottom">
+					<div class="section3_footer_bottom_left">
+						<p>© 2017 Independent Projects</p>
+					</div>
+					<div class="section3_footer_bottom_left">
+						<div class="section3_footer_bottom_left_img_top"><img src="images/Layer3.png" /></div>
+						<div class="section3_footer_bottom_left_img_bottom"><img src="images/Layer4.png" /></div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="section3_footer_read" style="display:none">
+    <div class="modal_opctiy"></div>
+	<div class="modal">
+		<div class="modal_content">
+			<div class="modal_content_top"><h2>Terms & Conditions</h2><a class="model_show">Close</a></div>
+			<div class="modal_content_content"><p>Independent Property Group Sales Pty Limited as agent for the owner advise that the information set out herein is for guidance of purchasers only and does not constitute an offer or contract. Any intending purchaser should not rely on information contained herein as a statement or representation of fact, but is advised to make their own enquiries and satisfy themselves in all respects. Independent Property Group Sales Pty Limited and the owner intend by this statement to exclude liability for all information contained herein. Independent Property Group Sales Pty. Ltd. Lic. Agent, Ground Floor, 91 Northbourne Ave Turner ACT 2601. Min EERX.</p></div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
