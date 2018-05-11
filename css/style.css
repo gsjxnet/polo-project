@@ -249,27 +249,14 @@ a:hover, a:active {
           cursor: pointer; }
         .section2 .section2_content .section2_content_p .section2_content_pp .div_a_slack {
           z-index: 8; }
-        .section2 .section2_content .section2_content_p .section2_content_pp .div_back_o {
-          width: 100%;
-          height: 100%;
-          background-color: #fff;
-          opacity: 0;
-          position: absolute;
-          z-index: 0;
-          bottom: 0;
-          transition: All 0.3s ease-in-out;
-          -webkit-transition: All 0.3s ease-in-out;
-          -moz-transition: All 0.3s ease-in-out;
-          -o-transition: All 0.3s ease-in-out; }
-        .section2 .section2_content .section2_content_p .section2_content_pp .div_back_opctiy {
-          z-index: 6;
-          opacity: 0.7; }
     .section2 .section2_content .div_next {
       width: 80%;
       max-width: 856px;
       text-align: left;
       font-size: 24px;
-      margin-top: 73px; }
+      margin-top: 73px;
+      position: relative;
+      z-index: 2; }
       @media (max-width: 414px) {
         .section2 .section2_content .div_next {
           font-size: 18px;
@@ -300,6 +287,21 @@ a:hover, a:active {
           color: #94c949; }
           .section2 .section2_content .div_next a:hover:after {
             background: url(../images/arrow-down-green.png) no-repeat; }
+    .section2 .section2_content .div_back_o {
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      opacity: 0;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      transition: All 0.3s ease-in-out;
+      -webkit-transition: All 0.3s ease-in-out;
+      -moz-transition: All 0.3s ease-in-out;
+      -o-transition: All 0.3s ease-in-out; }
+    .section2 .section2_content .div_back_opctiy {
+      z-index: 6;
+      opacity: 0.7; }
     .section2 .section2_content .div_img_slack {
       position: absolute;
       z-index: 0;
@@ -376,7 +378,9 @@ a:hover, a:active {
             color: #fff;
             font-size: 24px;
             padding-bottom: 43px;
-            line-height: 30px; }
+            line-height: 30px;
+            width: 95%;
+            max-width: 390px; }
             @media (max-width: 414px) {
               .section3 .section3_footer .mediate .section3_footer_top .section3_footer_left p {
                 font-size: 20px;
@@ -548,10 +552,12 @@ a:hover, a:active {
             -webkit-box-pack: start;
                 -ms-flex-pack: start;
                     justify-content: flex-start; } }
+        @media (max-width: 414px) {
+          .section3 .section3_footer .mediate .section3_footer_bottom {
+            height: 165px; } }
         .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left {
-          width: 45%;
+          width: 47%;
           max-width: 387px;
-          height: 84px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -560,7 +566,8 @@ a:hover, a:active {
                   justify-content: space-between;
           -webkit-box-align: center;
               -ms-flex-align: center;
-                  align-items: center; }
+                  align-items: center;
+          position: relative; }
           @media (max-width: 768px) {
             .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left {
               width: 100%;
@@ -568,11 +575,19 @@ a:hover, a:active {
           .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left p {
             font-size: 12px;
             text-align: left;
-            color: #fff; }
+            color: #fff;
+            position: absolute;
+            bottom: 0; }
+            @media (max-width: 414px) {
+              .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left p {
+                bottom: inherit; } }
           .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left .section3_footer_bottom_left_img_top img {
             width: 100%;
             max-width: 231px;
             height: auto; }
+            @media (max-width: 913px) {
+              .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left .section3_footer_bottom_left_img_top img {
+                width: 80%; } }
             @media (max-width: 414px) {
               .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left .section3_footer_bottom_left_img_top img {
                 max-width: 195px; } }
@@ -583,12 +598,29 @@ a:hover, a:active {
             width: 100%;
             max-width: 82px;
             height: auto; }
+            @media (max-width: 913px) {
+              .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left .section3_footer_bottom_left_img_bottom img {
+                width: 80%; } }
             @media (max-width: 414px) {
               .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left .section3_footer_bottom_left_img_bottom img {
                 max-width: 67px; } }
             @media (max-width: 370px) {
               .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left .section3_footer_bottom_left_img_bottom img {
                 max-width: 50px; } }
+        .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left_img img {
+          opacity: 0;
+          width: 100%;
+          max-width: 82px;
+          height: auto; }
+          @media (max-width: 913px) {
+            .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left_img img {
+              width: 80%; } }
+          @media (max-width: 414px) {
+            .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left_img img {
+              max-width: 67px; } }
+          @media (max-width: 370px) {
+            .section3 .section3_footer .mediate .section3_footer_bottom .section3_footer_bottom_left_img img {
+              max-width: 50px; } }
   .section3 .section3_footer_read {
     width: 100%;
     height: 100%;
@@ -638,11 +670,11 @@ a:hover, a:active {
               justify-content: center;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      height: 389px; }
       .section3 .section3_footer_read .modal .modal_content {
-        width: 80%;
-        height: auto;
-        margin-bottom: 10%;
+        width: 85%;
+        height: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -650,13 +682,12 @@ a:hover, a:active {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin-top: 10%; }
+        margin-top: 42px;
+        max-width: 554px;
+        /* margin-bottom: 58px; */ }
         .section3 .section3_footer_read .modal .modal_content .modal_content_top {
           width: 100%;
           display: -webkit-box;
@@ -669,16 +700,17 @@ a:hover, a:active {
               -ms-flex-align: center;
                   align-items: center; }
           .section3 .section3_footer_read .modal .modal_content .modal_content_top h2 {
-            font-size: 24px; }
+            font-size: 24px;
+            font-weight: 600; }
             @media (max-width: 414px) {
               .section3 .section3_footer_read .modal .modal_content .modal_content_top h2 {
                 font-size: 20px; } }
           .section3 .section3_footer_read .modal .modal_content .modal_content_top a {
-            width: 116px;
-            height: 40px;
+            width: 130px;
+            height: 38px;
             border: 2px solid #000;
             font-size: 16px;
-            line-height: 40px;
+            line-height: 38px;
             text-align: center;
             cursor: pointer;
             transition: All 0.3s ease-in-out;
@@ -693,9 +725,12 @@ a:hover, a:active {
               color: #fff;
               border: 2px solid #94c949; }
         .section3 .section3_footer_read .modal .modal_content .modal_content_content p {
-          padding-top: 50px;
           line-height: 24px;
-          font-size: 18px; }
+          font-size: 16px;
+          font-family: "Circular-Book";
+          padding-top: 51px;
+          color: #000000;
+          font-weight: 600; }
           @media (max-width: 414px) {
             .section3 .section3_footer_read .modal .modal_content .modal_content_content p {
               font-size: 12px;
